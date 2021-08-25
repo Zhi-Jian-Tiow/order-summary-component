@@ -1,0 +1,173 @@
+html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5em;
+}
+
+body {
+  background-color: rgb(221, 232, 247);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: min-content;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+.info {
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  color: rgb(149, 133, 161);
+}
+
+h1 + p {
+  width: 80%;
+  margin: 1em;
+  line-height: 1.5em;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  background-color: rgb(250, 249, 255);
+  width: 80%;
+  border-radius: 10px;
+}
+
+.plan div {
+  margin-left: 1.5em;
+  margin-right: 5em;
+}
+
+.plan h3 {
+  margin-bottom: -0.5em;
+  letter-spacing: -1px;
+}
+
+.plan a {
+  color: rgb(59, 62, 228);
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+button {
+  margin: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:first-of-type {
+  background-color: rgb(59, 62, 228);
+  color: white;
+  padding: 1.2em 8em;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+button:first-of-type:hover {
+  box-shadow: 0 12px 20px rgb(172, 173, 238);
+}
+
+button:last-of-type {
+  background-color: white;
+  color: rgb(141, 139, 139);
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 1.5em;
+}
+
+button:last-of-type:hover {
+  text-shadow: 1px 1px 1px rgb(183, 183, 201);
+}
+
+.attribution {
+  margin: 1em;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-size: cover;
+    max-width: 300px;
+  }
+
+  .container {
+    width: 100%;
+
+    margin: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .dancing-img {
+    width: 100%;
+  }
+
+  .info {
+    padding: 0.2em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .plan {
+    margin-top: 1em;
+    width: max-content;
+    padding: 0 0.5em;
+  }
+
+  .plan div {
+    margin-left: 1em;
+    margin-right: 4em;
+  }
+
+  .plan h3 {
+    margin-bottom: -0.5em;
+    letter-spacing: -1px;
+    font-size: 0.9em;
+  }
+
+  .plan a {
+    font-size: 0.8em;
+    margin-right: 0.5em;
+  }
+
+  button:first-of-type {
+    padding: 1.2em 5em;
+    font-size: 0.8em;
+    width: max-content;
+  }
+
+  .attribution {
+    font-size: 0.7em;
+  }
+}
